@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="329dp"
+    android:gravity="center"
+    android:background="@color/colorPrimaryDark">
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/profile_picture"></ImageView>
+
+    <TextView
+        android:id="@+id/dashBoardUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginTop="20sp"
+        android:textColor="#111111"
+        android:textSize="23sp"
+        android:textStyle="bold"  />
+
+
+
+</LinearLayout>

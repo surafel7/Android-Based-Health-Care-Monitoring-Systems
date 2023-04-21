@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/group_one">
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/ic_home_black_24dp">
+
+    </item>
+    <item
+        android:id="@+id/profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_person_black_24dp">
+
+    </item>
+
+    <item
+        android:id="@+id/activity"
+        android:title="Activity"
+        android:icon="@mipmap/ic_activity_foreground">
+    </item>
+
+    <item
+        android:id="@+id/my_diet"
+        android:title="My Diet"
+        android:icon="@drawable/ic_dining_black_24dp">
+    </item>
+        <item
+            android:id="@+id/Add_Blog"
+            android:title="Add Blog"
+            android:icon="@android:drawable/ic_menu_send">
+        </item>
+
+    <item
+        android:id="@+id/health_blog"
+        android:title="Health Blog"
+        android:icon="@mipmap/ic_blog_foreground">
+
+    </item>
+    </group>
+
+    <group android:id="@+id/group_two">
+
+    <item
+        android:id="@+id/about"
+        android:title="About us"
+        android:icon="@mipmap/ic_aboutus_foreground">
+
+    </item>
+    <item
+        android:id="@+id/feedback"
+        android:title="Feedback"
+        android:icon="@mipmap/ic_feedback_foreground">
+    </item>
+
+    <item
+        android:id="@+id/logout"
+        android:title="Log Out"
+        android:icon="@drawable/ic_power_settings_new_black_24dp">
+
+    </item>
+        </group>
+
+</menu>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="colorPrimary1">#1984b4</color>
+    <color name="colorPrimaryDark1">#0000A0</color>
+    <color name="colorAccent1">#D81B60</color>
+    <color name="colorText">#ffffff</color>
+
+
+    <color name="colorPrimary">#2a7ee6</color>
+    <color name="colorPrimaryDark">#76a5df</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="zircon">#e0e6e4</color>
+
+
+    <color name="blue">#3A85E1</color>
+</resources>
+

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MyDiet">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        android:theme="@style/AppThemeMyDiet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/forget_passwordToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppThemeMyDiet"
+            app:title="My Diet"
+            app:titleTextColor="#FFFFFF">
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:background="#e6f3ff"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/breakfast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="30sp"
+            android:text="BREAKFAST"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/breakfast_cal"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"
+            android:layout_marginRight="30sp"
+            android:text="70"
+            android:textSize="30sp"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_view_breakfast"
+        android:layout_width="match_parent"
+        android:layout_height="160px"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_add_breakfast"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="#e1e1d0"
+            android:text="+ Add Food"
+            android:textAlignment="center"
+            android:textAllCaps="false" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e6f3ff"
+        android:paddingBottom="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lunch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="30sp"
+            android:text="LUNCH"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/lunch_cal"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"
+            android:layout_marginRight="30sp"
+            android:text="70"
+            android:textSize="30sp"/>
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_view_lunch"
+        android:layout_width="match_parent"
+        android:layout_height="160px"/>
+    <Button
+        android:id="@+id/button_add_lunch"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e1e1d0"
+        android:text="+ Add Food"
+        android:textAllCaps="false"
+        android:textAlignment="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e6f3ff"
+        android:paddingBottom="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="30sp"
+            android:text="DINNER"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/dinner_cal"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"
+            android:layout_marginRight="30sp"
+            android:text="70"
+            android:textSize="30sp"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_view_dinner"
+        android:layout_width="match_parent"
+        android:layout_height="160px"/>
+    <Button
+        android:id="@+id/button_add_dinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e1e1d0"
+        android:text="+ Add Food"
+        android:textAllCaps="false"
+        android:textAlignment="center"></Button>
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  android:orientation="vertical"
+    tools:context=".AddBlog">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:layout_margin="20dp"
+            android:maxHeight="150dp"
+            android:background="@drawable/appon"
+            tools:layout_editor_absoluteX="24dp"
+            tools:layout_editor_absoluteY="72dp" />
+
+        <EditText
+            android:id="@+id/Title"
+            android:hint="Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/Catagory"
+            android:hint="Catagory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_marginStart="0dp"
+            android:padding="0dp"
+            android:textAlignment="textStart"
+            android:id="@+id/addblog"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:hint="Blog..."
+            android:autoLink="all"
+            />
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/post"
+            android:text="Post"
+            android:background="@color/blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        android:key="goal"
+        android:title="Goal"/>
+    <Preference
+        android:key="stepsize"
+        android:title="sample"/>
+    <Preference
+        android:key="account"
+        android:summary="edit"
+        android:title="sample one"/>
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="notification"
+        android:title="sample notification"/>
+    <Preference
+        android:key="export"
+        android:summary="sample 3"
+        android:title="sample 6"/>
+    <Preference
+        android:key="import"
+        android:summary="sample5"
+        android:title="sample 6"/>
+</PreferenceScreen>

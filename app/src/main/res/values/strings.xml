@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Health Care Monitoring System</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="prompt_email">you@email.com</string>
+    <string name="prompt_password">********</string>
+    <string name="login">Log In</string>
+    <string name="create_new">Click here to Register</string>
+    <string name="not_register">Not Register?</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="register">Register</string>
+    <string name="name_error">Please enter your name</string>
+    <string name="phone_error">Please enter a phone number</string>
+    <string name="email_error">Please enter a email address</string>
+    <string name="error_invalid_email">Email is not valid</string>
+    <string name="password_error">Please enter a password</string>
+    <string name="error_invalid_password">Please enter a minimum password of 6 characters</string>
+
+    <string name="open">Open navigation drawer</string>
+    <string name="close">Close navigation drawer</string>
+    <string name="email">Email</string>
+    <string name="password">password</string>
+    <string name="don_t_have_account">Don\'t have account?</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="full_name">Full Name</string>
+
+    <string-array name="activity_level_array">
+        <item>Select Activity Level</item>
+        <item>High</item>
+        <item>Medium</item>
+        <item>Low</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+    <string name="about_enjera">Enjera is mainly made from teff crope .Teff is tropical grain crop belonging to the grass family, Poaceae. It’s grown primarily in Ethiopia and Eritrea, where it’s thought to have originated thousands of years ago
+Resistant to drought, it can grow in a range of environmental conditions and comes in both darker and lighter varieties,
+Teff is highly nutritious. Just 3.5 ounces (100 grams) of teff flour provide
+•	Calories: 366
+•	Protein: 12.2 grams
+•	Fat: 3.7 grams
+•	Carbs: 70.7 grams
+•	Fiber: 12.2 grams
+•	Iron: 37% of the Daily Value (DV)
+•	Calcium: 11% of the DV
+Keeping hydrated is crucial for health and well-being, but many people do not consume enough fluids each day.
+Around 60 percent of the body is made up of water, and around 71 percent of the planet’s surface is covered by water.
+Perhaps it is the ubiquitous nature of water that means drinking enough each day is not at the top of many people’s lists of priorities.
+</string>
+</resources>

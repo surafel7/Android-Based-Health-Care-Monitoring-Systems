@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/card_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="10dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary1"
+            android:text="From the Smart Health Blog"/>
+        <ImageView
+            android:id="@+id/blog_image"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:background="#2d2d2d"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:id="@+id/blog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Blog Title"
+            android:textColor="@color/colorPrimary1"
+            android:textAlignment="center"/>
+
+        
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/linear_layout"
+    tools:context=".Home">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/dl"
+        android:fitsSystemWindows="true"
+        tools:openDrawer="end">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <include
+            android:id="@+id/home_layout"
+            layout="@layout/app_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:columnCount="3"
+                android:rowCount="3">
+                <!--<androidx.cardview.widget.CardView
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="10dp"
+                    android:elevation="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    app:cardCornerRadius="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="3"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Exercise"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+                            <TextView
+                                android:id="@+id/exercise_burned_calorie"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="222"
+                                android:textSize="24sp"/>
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="2dp"
+                                android:src="@mipmap/ic_kcal_icon"/>
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="2dp"
+                                android:src="@mipmap/ic_burned_icon"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView> -->
+                <androidx.cardview.widget.CardView
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="10dp"
+                    android:elevation="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    app:cardCornerRadius="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="3"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Today Goal"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+                            <TextView
+                                android:id="@+id/today_goal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textSize="24sp"/>
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="7dp"
+                                android:src="@mipmap/ic_kcal_icon"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="10dp"
+                    android:elevation="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    app:cardCornerRadius="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="3"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Consumed"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+                            <TextView
+                                android:id="@+id/consumed_calorie"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textSize="24sp"/>
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="7dp"
+                                android:src="@mipmap/ic_kcal_icon"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="10dp"
+                    android:elevation="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    app:cardCornerRadius="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="3"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Left"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+                            <TextView
+                                android:id="@+id/left_calorie"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textSize="24sp"/>
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="7dp"
+                                android:src="@mipmap/ic_kcal_icon"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="10dp"
+                    android:elevation="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    app:cardCornerRadius="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="3"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Breakfast"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+                            <TextView
+                                android:id="@+id/breakfast_calorie"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textSize="24sp"/>
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="5dp"
+                                android:src="@mipmap/ic_kcal_icon"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+                <!--<androidx.cardview.widget.CardView
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="10dp"
+                    android:elevation="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    app:cardCornerRadius="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="3"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Steps"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+                            <TextView
+                                android:id="@+id/steps_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="10"
+                                android:textSize="24sp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="km"
+                                android:layout_marginLeft="8dp"
+                                android:textSize="24sp"/>
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="2dp"
+                                android:src="@mipmap/ic_steps_icon"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>-->
+
+                <androidx.cardview.widget.CardView
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="10dp"
+                    android:elevation="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    app:cardCornerRadius="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="3"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lunch"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+                            <TextView
+                                android:id="@+id/lunch_calorie"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textSize="24sp"/>
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="5dp"
+                                android:src="@mipmap/ic_kcal_icon"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+                <!--<androidx.cardview.widget.CardView
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="10dp"
+                    android:elevation="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    app:cardCornerRadius="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="3"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Water"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="8"
+                                android:textSize="24sp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="L"
+                                android:layout_marginLeft="5dp"
+                                android:textSize="24sp"/>
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="10dp"
+                                android:src="@mipmap/ic_water_icon"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>-->
+
+                <androidx.cardview.widget.CardView
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="10dp"
+                    android:elevation="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    app:cardCornerRadius="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="3"
+                        android:gravity="center">
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dinner"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+                            <TextView
+                                android:id="@+id/dinner_calorie"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textSize="24sp"/>
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="5dp"
+                                android:src="@mipmap/ic_kcal_icon"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+             </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+        <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/navigation_header"
+        app:menu="@menu/navigation_menu"
+        android:fitsSystemWindows="true">
+
+
+
+       </com.google.android.material.navigation.NavigationView>
+
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+
+</LinearLayout>
